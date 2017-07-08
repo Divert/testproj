@@ -1,12 +1,6 @@
+$headerandteamBackground : #fff;
 header{
-	background-color: blue;
-	height: 100px;
-	 font-family: 'OpenSans';
-
-	p{
-		font-family: 'OpenSans';
-	}
-
+	
+	background: $headerandteamBackground;  
 }
-
  	
