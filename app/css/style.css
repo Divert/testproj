@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSansRegular/OpenSans.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSans.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSans.ttf") format("truetype"), url("../fonts/OpenSansRegular/OpenSans.svg#OpenSans") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+header {
+  background-color: blue;
+  height: 100px;
+  font-family: 'OpenSans'; }
+  header p {
+    font-family: 'OpenSans'; }
+
+body {
+  background: pink;
+  font-size: 40px;
+  padding: 100px; }
+  body a {
+    color: pink; }

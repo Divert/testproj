@@ -1,0 +1,16 @@
+@import "fonts";
+@import "header";
+
+$color: pink;
+
+body{
+	background: $color;
+	 
+	font-size: 40px;
+
+	a{
+		color: $color;
+	}
+	padding: 100px;
+}
+
