@@ -10,10 +10,3 @@ header {
   font-family: 'OpenSans'; }
   header p {
     font-family: 'OpenSans'; }
-
-body {
-  background: pink;
-  font-size: 40px;
-  padding: 100px; }
-  body a {
-    color: pink; }
