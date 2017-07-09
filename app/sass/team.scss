@@ -1,0 +1,65 @@
+@import "mixins";
+@import "settings";
+
+#team{
+	width: 100%;
+	display: block;
+	padding-bottom: 100px;
+}
+
+	.the_team{
+		color: $ctextColor;
+		text-align: center;
+		margin: 100px 0;
+		font-size: 42px;
+	}
+
+	.team_person{
+		width: 25%;
+		float: left;
+	}
+
+	
+	.ellipse, .ellipse_plus{
+		width: 201px;
+		height: 201px;
+		margin: 0 auto;
+		background-color: #eeeef0;
+		border-radius: 100px;
+		position: relative;
+	}
+							
+		.ellipse_plus:after{
+			content: "";
+			background: url("../img/med.png") no-repeat;
+			width: 42px;
+			height: 41px;
+			position: absolute;
+			top: 80px;
+			left: 80px;
+		}
+
+	.title-persons{
+		color: $ctextColor;
+		font-size: 22px;
+		text-align: center;
+		margin-top: 50px;
+		
+	} 
+
+	.post{
+		color: $ctextColor;
+		text-align: center;
+		font-size: $bodyFontSize;
+		margin: 0;
+	}
+
+	.persons-par{
+		color: $ctextColor;
+		max-width: 250px;
+		text-align: center;
+		font-size: $bodyFontSize;
+		line-height: 25px;
+		margin: 0 auto;
+		margin-top: 20px;
+	}

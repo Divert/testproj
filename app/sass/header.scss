@@ -1,6 +1,60 @@
-$headerandteamBackground : #fff;
+@import "mixins";
+@import "settings";
+
 header{
+	width:100%;
+	background: $baseColor;
+	min-height: 100px;
+	font-family: $fontFamily;
+	position: relative;
+
+
+	.logo{
+		width: 45%;
+		float: left;
+		display: inline-block;
+		margin-top: 30px;
+	}
+
+	nav{
+		width: 55%;
+		
+		overflow: hidden;
+		min-height: 100px;
 	
-	background: $headerandteamBackground;  
+
+		.nav_list{
+			float: right;
+			margin: 0;
+			padding: 0;
+		}
+
+			li{
+				display: inline-block;
+				list-style-type: none;
+			}
+
+			a{
+				display: block;
+				text-decoration: none;
+				color: $ctextColor;
+				padding: 0px 22px;
+			    transition: all .25s;
+			    display: block;
+			    box-sizing: border-box;
+			    font-size: 15px;
+			    font-weight: 400;
+			    line-height: 98px;
+			   
+		 	
+		 		&:hover{
+		 			color: $baseColorHover;
+		 			background-color: #f8f9fb;;
+		 			border-bottom: 2px solid $baseColorHover;
+		 		}
+		 		&:active{
+		 			color: $baseColorHover;
+		 		}
+			}
+	}		
 }
- 	

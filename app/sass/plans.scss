@@ -1,0 +1,105 @@
+
+
+#plans{
+	width: 100%;
+	display: block;
+	background-color: #f1f1f1;
+	padding: 90px 0;
+}
+	.plan{
+		width: 33.33333333%;
+		float: left;
+		max-width: 370px;
+		display: block;
+		padding: 0 15px;
+		min-height: 520px;
+	}
+	
+	
+
+	.plan_title{
+		line-height: 75px;
+		background-color: #485460;
+		text-align: center;
+		border-top-right-radius: 2px;
+		border-top-left-radius: 2px;
+		color:#ffffff;
+		font-size: 26px;
+		box-sizing:border-box;	
+		margin: 0;
+	}
+
+		
+							
+
+		.plans-list{
+			list-style: none;
+			border: 1px solid #ecf0f1;
+			border-top: none; 
+			padding: 0;
+			margin: 0;
+		}	
+			
+			.plans-list-item{
+				background-color: #fff;
+				border-bottom:1px solid #ecf0f1;
+				text-align: center;
+				box-sizing: border-box;
+				line-height: 48px;
+			}
+
+								
+				
+
+
+				.plans-list-item:nth-child(1){
+					line-height: 70px;
+					background-color: #f8f9fb;
+				}
+
+				.plans-list-item:nth-child(8){
+					background-color: #f8f9fb;
+					border: none;
+					min-height: 100px;
+					position: relative;
+				}
+
+				
+				.plans-list-item-link{
+					color: #9ba1a7;
+					font-size: 14px;
+					margin: 0;
+					padding: 0;
+				}
+					
+					
+					.plans-list-item-link-price{
+						position: relative;
+						color: #485460;
+						font-size: 20px;
+						letter-spacing: 0.04em;
+						margin: 0;
+					}
+					
+					
+					.plans-list-item-link-buy{
+						background-color: #788492;
+						text-decoration: none;
+						margin: 0 auto;
+						position: relative;
+						top: 30px;
+						color: #485460;
+						display: block;
+						width: 170px;
+						height: 40px;
+						color: #fff;
+						border-radius: 3px;
+						font-size: 17px;
+						line-height: 40px;
+						cursor:pointer;
+					}
+
+
+						.plans-list-item-link-buy:hover{
+							background-color: #49cbcd;
+						}

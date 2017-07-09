@@ -1,0 +1,54 @@
+/*buttons*/
+#team {
+  width: 100%;
+  display: block;
+  padding-bottom: 100px; }
+
+.the_team {
+  color: #4e525d;
+  text-align: center;
+  margin: 100px 0;
+  font-size: 42px; }
+
+.team_person {
+  width: 25%;
+  float: left; }
+
+.ellipse, .ellipse_plus {
+  width: 201px;
+  height: 201px;
+  margin: 0 auto;
+  background-color: #eeeef0;
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
+  position: relative; }
+
+.ellipse_plus:after {
+  content: "";
+  background: url("../img/med.png") no-repeat;
+  width: 42px;
+  height: 41px;
+  position: absolute;
+  top: 80px;
+  left: 80px; }
+
+.title-persons {
+  color: #4e525d;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 50px; }
+
+.post {
+  color: #4e525d;
+  text-align: center;
+  font-size: 14px;
+  margin: 0; }
+
+.persons-par {
+  color: #4e525d;
+  max-width: 250px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0 auto;
+  margin-top: 20px; }
