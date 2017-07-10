@@ -1,0 +1,179 @@
+/*buttons*/
+footer {
+  width: 100%;
+  display: block;
+  background: url("../img/footer.jpg") 100% 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  overflow: hidden;
+  min-height: 691px; }
+
+.contact_us {
+  text-align: center;
+  color: #fff;
+  margin: 100px 0;
+  font-size: 42px;
+  font-weight: 400; }
+
+.social_contact {
+  width: 50%;
+  float: left; }
+
+.get_in {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0; }
+
+.par_1 {
+  color: #8d8d8d;
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 20px;
+  max-width: 420px; }
+
+.par_2 {
+  color: #bface2;
+  font-family: "Myriad Pro";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  max-width: 190px; }
+
+.par_2 > span {
+  font-family: OpenSans;
+  color: #bface2; }
+
+.social {
+  margin-top: 20px; }
+
+.facebook, .twitter, .gplus {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  width: 42px;
+  height: 42px;
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
+  cursor: pointer; }
+
+.facebook {
+  background-color: #3b5997; }
+
+.facebook:after {
+  content: "";
+  background: url("../img/social.png");
+  background-position: 0px -39px;
+  width: 11px;
+  height: 22px;
+  position: absolute;
+  top: 10px;
+  left: 15px; }
+
+.facebook:hover {
+  background-color: #4874d0; }
+
+.twitter {
+  background-color: #3ec2f3; }
+
+.twitter:after {
+  content: "";
+  background: url("../img/social.png");
+  background-position: 0px -22px;
+  width: 21px;
+  height: 17px;
+  position: absolute;
+  top: 12px;
+  left: 10px; }
+
+.twitter:hover {
+  background-color: #78daff; }
+
+.gplus {
+  background-color: #e44c41; }
+
+.gplus:after {
+  content: "";
+  background: url("../img/social.png");
+  background-position: 0px 0px;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 12px;
+  left: 10px; }
+
+.gplus:hover {
+  background-color: #fb5a4f; }
+
+.form {
+  width: 50%;
+  float: left; }
+
+.name_inp {
+  border: none;
+  width: 47%;
+  max-width: 270px;
+  padding: 10px;
+  margin-right: 5%;
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
+
+.name_inp::-moz-placeholder {
+  font-size: 16px; }
+
+.name_inp::-webkit-input-placeholder {
+  font-size: 16px; }
+
+.name_inp:-ms-input-placeholder {
+  font-size: 16px; }
+
+.email_inp {
+  width: 47%;
+  border: none;
+  padding: 10px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
+
+.email_inp::-moz-placeholder {
+  font-size: 16px; }
+
+.email_inp::-webkit-input-placeholder {
+  font-size: 16px; }
+
+.email_inp:-ms-input-placeholder {
+  font-size: 16px; }
+
+#message {
+  max-width: 100%;
+  width: 100%;
+  padding: 10px 0 0 10px;
+  margin-top: 30px;
+  border: none;
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
+
+#message::-moz-placeholder {
+  font-size: 16px; }
+
+#message::-webkit-input-placeholder {
+  font-size: 16px; }
+
+#message:-ms-input-placeholder {
+  font-size: 16px; }
+
+/*--------------button--------------*/
+.submit_form {
+  width: 170px;
+  height: 50px;
+  float: right;
+  margin-top: 30px;
+  background-color: #49cbcd;
+  color: #fff;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  cursor: pointer;
+  font-size: 22px;
+  border: none; }
+
+.submit_form:hover {
+  background-color: #55eef0; }

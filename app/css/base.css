@@ -1,31 +1,4 @@
 /*buttons*/
-.clear {
-  clear: both;
-  font-size: 1px;
-  line-height: 1px;
-  height: 0;
-  overflow: hidden; }
-
-.juster {
-  display: inline-block;
-  width: 100%;
-  height: 0;
-  overflow: hidden; }
-
-.vfix {
-  height: 100%;
-  width: 0px;
-  display: inline-block;
-  vertical-align: middle; }
-
-.hiddenBlock {
-  position: absolute;
-  left: -99999em;
-  top: -99999em; }
-
-.hidden {
-  display: none; }
-
 html {
   height: 100%; }
 

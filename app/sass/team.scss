@@ -12,6 +12,7 @@
 		text-align: center;
 		margin: 100px 0;
 		font-size: 42px;
+		font-weight: 400;
 	}
 
 	.team_person{
@@ -42,8 +43,9 @@
 	.title-persons{
 		color: $ctextColor;
 		font-size: 22px;
+		font-weight: 400;
 		text-align: center;
-		margin-top: 50px;
+		margin: 50px 0 5px;
 		
 	} 
 
@@ -51,6 +53,7 @@
 		color: $ctextColor;
 		text-align: center;
 		font-size: $bodyFontSize;
+		font-weight: 400;
 		margin: 0;
 	}
 

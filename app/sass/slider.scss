@@ -1,0 +1,57 @@
+
+.slider_content{
+	position: relative;
+	overflow: hidden;
+
+}
+	.sl_link{
+		margin: auto;
+  		position: absolute;
+  		top: 0; left: 0; bottom: 0; right: 0;
+		
+		
+		.title_slider{
+			font-family: OpenSans;
+			color:  #ffffff;
+			font-size: 63px;
+			font-weight: 600;
+			text-align: center;
+			text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.16);
+			margin: 150px 0 50px;
+		}
+
+		.descr_slider{
+			font-family: OpenSans;
+			color:  #ffffff;
+			font-size: 23px;
+			font-weight: 400;
+			line-height: 37px;
+			text-align: center;
+			max-width: 380px;
+    		margin: 0 auto;
+		}
+
+		.sl_button{
+			display: block;
+			max-width: 225px;
+			text-align: center;
+			padding: 10px 25px;
+			border: 3px solid #fff;
+			border-radius: 5px;
+			margin: 0 auto;
+	 		margin-top: 60px;
+	 		cursor: pointer;
+			text-decoration: none;
+			font-size: 26px;
+			color: #fff;
+		}
+
+		.sl_button:hover, .sl_button:focus{
+			opacity: 0.5;
+		}
+
+		a:hover, a:focus{
+			text-decoration: none;
+			color: #fff;
+		}
+	}
