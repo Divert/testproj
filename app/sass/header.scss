@@ -8,6 +8,10 @@ header{
 	font-family: $fontFamily;
 	position: relative;
 	overflow: hidden;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+
 
 	.logo{
 		width: 45%;
@@ -18,9 +22,9 @@ header{
 
 	nav{
 		width: 55%;
-		position: relative;
+		/*position: relative;*/
 		overflow: hidden;
-		min-height: 100px;
+		
 	
 
 		.nav_list{

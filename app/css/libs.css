@@ -479,6 +479,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+.slick-slide img {
+  width: 100%; }
+
 .slick-prev, .slick-next {
   width: 50px;
   height: 50px;
@@ -524,14 +527,3 @@ template {
   position: absolute;
   top: 12px;
   left: 18px; }
-
-.slider {
-  position: relative; }
-
-.slider-content {
-  position: absolute;
-  top: 0; }
-  .slider-content .title_slider {
-    color: #111; }
-  .slider-content .description_slider {
-    color: 111; }

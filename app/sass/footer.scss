@@ -126,14 +126,15 @@ footer{
 			float: left;
 		}
 			
-			.name_inp{
-				border: none;
-				width: 47%;
-				max-width: 270px;
-				padding: 10px;
-				margin-right: 5%;
-				border-radius: 3px;
-				
+			.name_inp {
+			    border: none;
+			    width: 49%;
+			    max-width: 270px;
+			    padding: 10px;
+			    margin-right: 2%;
+			    border-radius: 3px;
+			    float: left;
+			    display: block;
 			}
 
 				.name_inp::-moz-placeholder{ 
@@ -148,11 +149,13 @@ footer{
 					font-size: 16px;
 				}
 
-			.email_inp{
-				width: 47%;
-				border: none;
-				padding: 10px;
-				border-radius: 3px;
+			.email_inp {
+			    width: 49%;
+			    border: none;
+			    padding: 10px;
+			    border-radius: 3px;
+			    float: right;
+			    display: block;
 			}
 
 				.email_inp::-moz-placeholder{ 
@@ -208,4 +211,22 @@ footer{
 				.submit_form:hover{
 					background-color: #55eef0;
 				}
+
+
+		#scrollup {
+			position: fixed; 
+			opacity: 0.4; 
+			padding: 15px 10px 10px; 
+			background: #49cbcd;
+			border-radius: 5px; 
+			left: 10px; 
+			bottom: 10px; 
+			display: none; 
+			cursor: pointer;
+			z-index: 9999;
+		}
+
+			#scrollup:hover{
+				opacity: 1;
+			}
 

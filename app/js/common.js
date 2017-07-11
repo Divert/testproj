@@ -46,15 +46,13 @@ $('.slider').slick({
     draggable: false
   });
 
-$(document).ready(function(){
-	$(document).on('click', '.hide_nav', function(){
-		var nav = $('.nav_list');
-		$('.hide_nav').toggleClass('active');
-		if(nav.is(':visible')) {
-			nav.slideUp();
-		} else{
-			nav.slideDown();
-		}
-	})
+$( ".hide_nav" ).click(function() {
+	$('.hide_nav').toggleClass('active');
+  $( ".nav_list" ).slideToggle( "slow" ).css('display','block');
 });
+
+
+
+
+
 

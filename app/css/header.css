@@ -5,7 +5,10 @@ header {
   min-height: 100px;
   font-family: OpenSans;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  position: fixed;
+  z-index: 9999;
+  top: 0; }
   header .logo {
     width: 45%;
     float: left;
@@ -13,9 +16,8 @@ header {
     margin-top: 30px; }
   header nav {
     width: 55%;
-    position: relative;
-    overflow: hidden;
-    min-height: 100px; }
+    /*position: relative;*/
+    overflow: hidden; }
     header nav .nav_list {
       float: right;
       margin: 0;

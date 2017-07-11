@@ -496,6 +496,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+.slick-slide img {
+  width: 100%; }
+
 .slick-prev, .slick-next {
   width: 50px;
   height: 50px;
@@ -542,17 +545,6 @@ template {
   top: 12px;
   left: 18px; }
 
-.slider {
-  position: relative; }
-
-.slider-content {
-  position: absolute;
-  top: 0; }
-  .slider-content .title_slider {
-    color: #111; }
-  .slider-content .description_slider {
-    color: 111; }
-
 @font-face {
   font-family: 'OpenSans';
   src: url("../fonts/OpenSansRegular/OpenSans.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSans.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSans.ttf") format("truetype"), url("../fonts/OpenSansRegular/OpenSans.svg#OpenSans") format("svg");
@@ -589,7 +581,10 @@ header {
   min-height: 100px;
   font-family: OpenSans;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  position: fixed;
+  z-index: 9999;
+  top: 0; }
   header .logo {
     width: 45%;
     float: left;
@@ -597,9 +592,8 @@ header {
     margin-top: 30px; }
   header nav {
     width: 55%;
-    position: relative;
-    overflow: hidden;
-    min-height: 100px; }
+    /*position: relative;*/
+    overflow: hidden; }
     header nav .nav_list {
       float: right;
       margin: 0;
@@ -679,6 +673,9 @@ header {
     -o-transition: 1s;
     transition: 1s; }
 
+.slider {
+  margin-top: 100px; }
+
 .slider_content {
   position: relative;
   overflow: hidden; }
@@ -697,7 +694,7 @@ header {
     font-weight: 600;
     text-align: center;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.16);
-    margin: 150px 0 50px; }
+    margin: 130px 0 30px; }
   .sl_link .descr_slider {
     font-family: OpenSans;
     color: #ffffff;
@@ -716,7 +713,7 @@ header {
     -webkit-border-radius: 5px;
             border-radius: 5px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 50px;
     cursor: pointer;
     text-decoration: none;
     font-size: 26px;
@@ -985,12 +982,14 @@ footer {
 
 .name_inp {
   border: none;
-  width: 47%;
+  width: 49%;
   max-width: 270px;
   padding: 10px;
-  margin-right: 5%;
+  margin-right: 2%;
   -webkit-border-radius: 3px;
-          border-radius: 3px; }
+          border-radius: 3px;
+  float: left;
+  display: block; }
 
 .name_inp::-moz-placeholder {
   font-size: 16px; }
@@ -1002,11 +1001,13 @@ footer {
   font-size: 16px; }
 
 .email_inp {
-  width: 47%;
+  width: 49%;
   border: none;
   padding: 10px;
   -webkit-border-radius: 3px;
-          border-radius: 3px; }
+          border-radius: 3px;
+  float: right;
+  display: block; }
 
 .email_inp::-moz-placeholder {
   font-size: 16px; }
@@ -1052,37 +1053,194 @@ footer {
 .submit_form:hover {
   background-color: #55eef0; }
 
+#scrollup {
+  position: fixed;
+  opacity: 0.4;
+  padding: 15px 10px 10px;
+  background: #49cbcd;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  left: 10px;
+  bottom: 10px;
+  display: none;
+  cursor: pointer;
+  z-index: 9999; }
+
+#scrollup:hover {
+  opacity: 1; }
+
 @media only screen and (max-width: 1200px) {
   .nav_list a {
-    padding: 0 18px; } }
+    padding: 0 18px; }
+  .sl_link .title_slider {
+    margin: 80px 0 30px; }
+  .sl_link .sl_button {
+    margin-top: 30px; } }
 
 @media only screen and (max-width: 992px) {
-  .nav_list {
-    display: none; }
-    .nav_list a {
-      padding: 0 8px; } }
+  .nav_list a {
+    padding: 0 8px; }
+  .sl_link .title_slider {
+    margin: 50px 0 20px;
+    font-size: 40px; }
+  .sl_link .descr_slider {
+    font-size: 20px; }
+  .sl_link .sl_button {
+    max-width: 170px;
+    font-size: 20px; }
+  #team {
+    padding-bottom: 0; }
+  .team_person {
+    width: 50%; }
+  .the_team {
+    margin: 30px 0; }
+  .title-persons {
+    margin: 20px 0 5px; }
+  .persons-par {
+    margin-bottom: 40px; }
+  .plan {
+    width: 33.333333%;
+    float: left;
+    max-width: 100%;
+    display: block;
+    padding: 0 15px;
+    min-height: 0; }
+    .plan .plans-list-item {
+      line-height: 30px; }
+    .plan .plans-list-item:nth-child(1) {
+      line-height: 50px; } }
 
 @media only screen and (max-width: 768px) {
-  header nav {
-    width: 100%; }
-    header nav .hide_nav {
-      position: absolute;
-      right: 0; }
-    header nav .nav_list {
+  header {
+    margin-bottom: 20px; }
+    header .logo {
+      width: 100%;
+      float: none; }
+    header nav {
+      width: 100%; }
+      header nav .hide_nav {
+        position: absolute;
+        right: 15px;
+        top: 30px; }
+      header nav .nav_list {
+        display: none;
+        float: none;
+        margin-top: 0px;
+        background-color: #49cbcd; }
+        header nav .nav_list li {
+          display: block; }
+          header nav .nav_list li a {
+            padding: 0;
+            text-align: center;
+            line-height: 40px;
+            color: #fff; }
+            header nav .nav_list li a:hover, header nav .nav_list li a:active {
+              border-bottom: none;
+              color: #49cbcd; }
+  .sl_link .title_slider {
+    margin: 40px 0 20px;
+    font-size: 30px; }
+  .sl_link .descr_slider {
+    font-size: 18px;
+    max-width: 300px; }
+  .sl_link .sl_button {
+    margin-top: 10px;
+    max-width: 150px;
+    font-size: 16px; }
+  .persons-par {
+    max-width: 210px; }
+  #plans {
+    padding: 25px 0; }
+  .plan {
+    width: 100%;
+    float: none;
+    max-width: 100%;
+    display: block;
+    min-height: 0;
+    margin: 20px 0; }
+    .plan .plans-list-item {
+      line-height: 30px; }
+    .plan .plans-list-item:nth-child(1) {
+      line-height: 50px; }
+  footer {
+    padding: 10px 0; }
+  .contact_us {
+    margin: 40px 0; }
+  .social_contact {
+    width: 100%;
+    float: none;
+    text-align: center; }
+    .social_contact .par_1 {
+      max-width: 100%; }
+    .social_contact .par_2 {
+      display: block;
+      margin: 0 auto; }
+  .form {
+    width: 100%;
+    float: none; }
+    .form .name_inp {
+      width: 100%;
+      max-width: 100%;
       float: none;
-      margin-top: 40px;
-      background-color: #49cbcd; }
-      header nav .nav_list li {
-        display: block; }
-        header nav .nav_list li a {
-          padding: 0;
-          text-align: center;
-          line-height: 40px;
-          color: #fff; }
-          header nav .nav_list li a:hover, header nav .nav_list li a:active {
-            border-bottom: none;
-            color: #49cbcd; } }
+      display: block;
+      margin: 20px 0; }
+    .form .email_inp {
+      width: 100%;
+      display: block;
+      float: none; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 620px) {
+  .sl_link .title_slider {
+    margin: 30px 0 10px;
+    font-size: 22px; }
+  .sl_link .descr_slider {
+    font-size: 14px;
+    max-width: 230px;
+    line-height: 24px; }
+  .sl_link .sl_button {
+    margin-top: 10px;
+    max-width: 132px;
+    font-size: 14px; } }
+
+@media only screen and (max-width: 480px) {
+  .sl_link .title_slider {
+    margin: 20px 0 5px;
+    font-size: 20px; }
+  .sl_link .descr_slider {
+    font-size: 12px;
+    max-width: 210px;
+    line-height: 15px; }
+  .sl_link .sl_button {
+    margin-top: 5px;
+    max-width: 125px;
+    font-size: 12px;
+    padding: 5px 0; }
+  .slick-next {
+    right: 0; }
+  .slick-prev {
+    left: 0; }
+  .team_person {
+    width: 100%; } }
+
+@media only screen and (min-width: 769px) {
   .hide_nav {
     display: none; } }
+
+@media only screen and (min-width: 1200px) {
+  .slick-slide img {
+    min-height: 566px; } }
+
+@media only screen and (min-width: 1900px) {
+  .sl_link .title_slider {
+    margin: 150px 0 50px;
+    font-size: 80px; }
+  .sl_link .descr_slider {
+    font-size: 45px;
+    max-width: 740px; }
+  .sl_link .sl_button {
+    max-width: 330px;
+    font-size: 45px;
+    border: 10px solid #fff;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    margin-top: 90px; } }
