@@ -4,7 +4,8 @@ header {
   background: #fff;
   min-height: 100px;
   font-family: OpenSans;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   header .logo {
     width: 45%;
     float: left;
@@ -12,6 +13,7 @@ header {
     margin-top: 30px; }
   header nav {
     width: 55%;
+    position: relative;
     overflow: hidden;
     min-height: 100px; }
     header nav .nav_list {
@@ -20,7 +22,8 @@ header {
       padding: 0; }
     header nav li {
       display: inline-block;
-      list-style-type: none; }
+      list-style-type: none;
+      line-height: 100px; }
     header nav a {
       display: block;
       text-decoration: none;
@@ -41,3 +44,53 @@ header {
         border-bottom: 2px solid #49cbcd; }
       header nav a:active {
         color: #49cbcd; }
+  header .hide_nav {
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    background-color: #49cbcd;
+    cursor: pointer; }
+  header .hide_nav_line {
+    position: absolute;
+    display: block;
+    width: 80%;
+    left: 10%;
+    height: 3px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
+  header .hide_nav_line_top {
+    top: 8px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+  header .hide_nav_line_middle {
+    top: 18px;
+    opacity: 1; }
+  header .hide_nav_line_bottom {
+    top: 28px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+  header .hide_nav.active .hide_nav_line_top {
+    top: 20px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+  header .hide_nav.active .hide_nav_line_middle {
+    opacity: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+  header .hide_nav.active .hide_nav_line_bottom {
+    top: 20px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }

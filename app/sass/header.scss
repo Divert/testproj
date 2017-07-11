@@ -7,7 +7,7 @@ header{
 	min-height: 100px;
 	font-family: $fontFamily;
 	position: relative;
-
+	overflow: hidden;
 
 	.logo{
 		width: 45%;
@@ -18,7 +18,7 @@ header{
 
 	nav{
 		width: 55%;
-		
+		position: relative;
 		overflow: hidden;
 		min-height: 100px;
 	
@@ -32,6 +32,7 @@ header{
 			li{
 				display: inline-block;
 				list-style-type: none;
+				line-height: 100px;
 			}
 
 			a{
@@ -57,4 +58,50 @@ header{
 		 		}
 			}
 	}		
+
+	.hide_nav{
+		position: relative;
+		float: right;
+		width: 40px;
+		height: 40px;
+		background-color: #49cbcd;
+		cursor: pointer;
+	}
+		.hide_nav_line{
+			position: absolute;
+			display: block;
+			width: 80%;
+			left: 10%;
+			height: 3px;
+			background-color: #fff;
+			border-radius: 5px;
+		}
+			.hide_nav_line_top{
+				top: 8px;
+				transition: 1s;
+			}
+			.hide_nav_line_middle{
+				top: 18px;
+				opacity: 1;
+			}
+			.hide_nav_line_bottom{
+				top: 28px;
+				transition: 1s;
+			}
+
+			.hide_nav.active .hide_nav_line_top{
+				top: 20px;
+				transform: rotate(45deg);
+				transition: 1s;
+			}
+			.hide_nav.active .hide_nav_line_middle{
+				opacity: 0;
+				transition: 1s;
+			}
+			.hide_nav.active .hide_nav_line_bottom{
+				top: 20px;
+				transform: rotate(-45deg);
+				transition: 1s;
+			}
+
 }
