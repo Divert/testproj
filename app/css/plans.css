@@ -41,16 +41,14 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 48px; }
-
-.plans-list-item:nth-child(1) {
-  line-height: 70px;
-  background-color: #f8f9fb; }
-
-.plans-list-item:nth-child(8) {
-  background-color: #f8f9fb;
-  border: none;
-  min-height: 100px;
-  position: relative; }
+  .plans-list-item:nth-child(1) {
+    line-height: 70px;
+    background-color: #f8f9fb; }
+  .plans-list-item:nth-child(8) {
+    background-color: #f8f9fb;
+    border: none;
+    min-height: 100px;
+    position: relative; }
 
 .plans-list-item-link {
   color: #9ba1a7;
@@ -81,6 +79,5 @@
   font-size: 17px;
   line-height: 40px;
   cursor: pointer; }
-
-.plans-list-item-link-buy:hover {
-  background-color: #49cbcd; }
+  .plans-list-item-link-buy:hover {
+    background-color: #49cbcd; }

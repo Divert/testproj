@@ -1,4 +1,3 @@
-/*buttons*/
 footer {
   width: 100%;
   display: block;
@@ -59,51 +58,45 @@ footer {
 
 .facebook {
   background-color: #3b5997; }
-
-.facebook:after {
-  content: "";
-  background: url("../img/social.png");
-  background-position: 0px -39px;
-  width: 11px;
-  height: 22px;
-  position: absolute;
-  top: 10px;
-  left: 15px; }
-
-.facebook:hover {
-  background-color: #4874d0; }
+  .facebook:after {
+    content: "";
+    background: url("../img/social.png");
+    background-position: 0px -39px;
+    width: 11px;
+    height: 22px;
+    position: absolute;
+    top: 10px;
+    left: 15px; }
+  .facebook:hover {
+    background-color: #4874d0; }
 
 .twitter {
   background-color: #3ec2f3; }
-
-.twitter:after {
-  content: "";
-  background: url("../img/social.png");
-  background-position: 0px -22px;
-  width: 21px;
-  height: 17px;
-  position: absolute;
-  top: 12px;
-  left: 10px; }
-
-.twitter:hover {
-  background-color: #78daff; }
+  .twitter:after {
+    content: "";
+    background: url("../img/social.png");
+    background-position: 0px -22px;
+    width: 21px;
+    height: 17px;
+    position: absolute;
+    top: 12px;
+    left: 10px; }
+  .twitter:hover {
+    background-color: #78daff; }
 
 .gplus {
   background-color: #e44c41; }
-
-.gplus:after {
-  content: "";
-  background: url("../img/social.png");
-  background-position: 0px 0px;
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  top: 12px;
-  left: 10px; }
-
-.gplus:hover {
-  background-color: #fb5a4f; }
+  .gplus:after {
+    content: "";
+    background: url("../img/social.png");
+    background-position: 0px 0px;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 12px;
+    left: 10px; }
+  .gplus:hover {
+    background-color: #fb5a4f; }
 
 .form {
   width: 50%;
@@ -119,15 +112,12 @@ footer {
           border-radius: 3px;
   float: left;
   display: block; }
-
-.name_inp::-moz-placeholder {
-  font-size: 16px; }
-
-.name_inp::-webkit-input-placeholder {
-  font-size: 16px; }
-
-.name_inp:-ms-input-placeholder {
-  font-size: 16px; }
+  .name_inp::-moz-placeholder {
+    font-size: 16px; }
+  .name_inp::-webkit-input-placeholder {
+    font-size: 16px; }
+  .name_inp:-ms-input-placeholder {
+    font-size: 16px; }
 
 .email_inp {
   width: 49%;
@@ -137,15 +127,12 @@ footer {
           border-radius: 3px;
   float: right;
   display: block; }
-
-.email_inp::-moz-placeholder {
-  font-size: 16px; }
-
-.email_inp::-webkit-input-placeholder {
-  font-size: 16px; }
-
-.email_inp:-ms-input-placeholder {
-  font-size: 16px; }
+  .email_inp::-moz-placeholder {
+    font-size: 16px; }
+  .email_inp::-webkit-input-placeholder {
+    font-size: 16px; }
+  .email_inp:-ms-input-placeholder {
+    font-size: 16px; }
 
 #message {
   max-width: 100%;
@@ -155,17 +142,13 @@ footer {
   border: none;
   -webkit-border-radius: 3px;
           border-radius: 3px; }
+  #message::-moz-placeholder {
+    font-size: 16px; }
+  #message::-webkit-input-placeholder {
+    font-size: 16px; }
+  #message:-ms-input-placeholder {
+    font-size: 16px; }
 
-#message::-moz-placeholder {
-  font-size: 16px; }
-
-#message::-webkit-input-placeholder {
-  font-size: 16px; }
-
-#message:-ms-input-placeholder {
-  font-size: 16px; }
-
-/*--------------button--------------*/
 .submit_form {
   width: 170px;
   height: 50px;
@@ -178,22 +161,20 @@ footer {
   cursor: pointer;
   font-size: 22px;
   border: none; }
+  .submit_form:hover, .submit_form:active {
+    background-color: #55eef0; }
 
-.submit_form:hover {
-  background-color: #55eef0; }
+/*Validation form*/
+.name_block, .email_block {
+  position: relative; }
+  .name_block label#form_name-error, .email_block label#form_name-error {
+    position: absolute;
+    top: 40px;
+    left: 0; }
+  .name_block label#form_email-error, .email_block label#form_email-error {
+    position: absolute;
+    top: 40px; }
 
-#scrollup {
-  position: fixed;
-  opacity: 0.4;
-  padding: 15px 10px 10px;
-  background: #49cbcd;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  left: 10px;
-  bottom: 10px;
-  display: none;
-  cursor: pointer;
-  z-index: 9999; }
-
-#scrollup:hover {
-  opacity: 1; }
+label.error {
+  color: red;
+  font-size: 10px; }

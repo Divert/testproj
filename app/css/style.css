@@ -1,5 +1,3 @@
-/*buttons*/
-/*buttons*/
 html {
   height: 100%; }
 
@@ -574,7 +572,6 @@ body * {
   .container:after {
     clear: both; }
 
-/*buttons*/
 header {
   width: 100%;
   background: #fff;
@@ -592,7 +589,6 @@ header {
     margin-top: 30px; }
   header nav {
     width: 55%;
-    /*position: relative;*/
     overflow: hidden; }
     header nav .nav_list {
       float: right;
@@ -611,8 +607,6 @@ header {
       -o-transition: all .25s;
       transition: all .25s;
       display: block;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
       font-size: 15px;
       font-weight: 400;
       line-height: 98px; }
@@ -628,7 +622,9 @@ header {
     width: 40px;
     height: 40px;
     background-color: #49cbcd;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
   header .hide_nav_line {
     position: absolute;
     display: block;
@@ -718,13 +714,12 @@ header {
     text-decoration: none;
     font-size: 26px;
     color: #fff; }
-  .sl_link .sl_button:hover, .sl_link .sl_button:focus {
-    opacity: 0.5; }
+    .sl_link .sl_button:hover, .sl_link .sl_button:focus {
+      opacity: 0.5; }
   .sl_link a:hover, .sl_link a:focus {
     text-decoration: none;
     color: #fff; }
 
-/*buttons*/
 #team {
   width: 100%;
   display: block;
@@ -740,47 +735,42 @@ header {
 .team_person {
   width: 25%;
   float: left; }
-
-.ellipse, .ellipse_plus {
-  width: 201px;
-  height: 201px;
-  margin: 0 auto;
-  background-color: #eeeef0;
-  -webkit-border-radius: 100px;
-          border-radius: 100px;
-  position: relative; }
-
-.ellipse_plus:after {
-  content: "";
-  background: url("../img/med.png") no-repeat;
-  width: 42px;
-  height: 41px;
-  position: absolute;
-  top: 80px;
-  left: 80px; }
-
-.title-persons {
-  color: #4e525d;
-  font-size: 22px;
-  font-weight: 400;
-  text-align: center;
-  margin: 50px 0 5px; }
-
-.post {
-  color: #4e525d;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0; }
-
-.persons-par {
-  color: #4e525d;
-  max-width: 250px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 25px;
-  margin: 0 auto;
-  margin-top: 20px; }
+  .team_person .ellipse, .team_person .ellipse_plus {
+    width: 201px;
+    height: 201px;
+    margin: 0 auto;
+    background-color: #eeeef0;
+    -webkit-border-radius: 100px;
+            border-radius: 100px;
+    position: relative; }
+  .team_person .ellipse_plus:after {
+    content: "";
+    background: url("../img/med.png") no-repeat;
+    width: 42px;
+    height: 41px;
+    position: absolute;
+    top: 80px;
+    left: 80px; }
+  .team_person .title-persons {
+    color: #4e525d;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    margin: 50px 0 5px; }
+  .team_person .post {
+    color: #4e525d;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0; }
+  .team_person .persons-par {
+    color: #4e525d;
+    max-width: 250px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0 auto;
+    margin-top: 20px; }
 
 #plans {
   width: 100%;
@@ -825,16 +815,14 @@ header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 48px; }
-
-.plans-list-item:nth-child(1) {
-  line-height: 70px;
-  background-color: #f8f9fb; }
-
-.plans-list-item:nth-child(8) {
-  background-color: #f8f9fb;
-  border: none;
-  min-height: 100px;
-  position: relative; }
+  .plans-list-item:nth-child(1) {
+    line-height: 70px;
+    background-color: #f8f9fb; }
+  .plans-list-item:nth-child(8) {
+    background-color: #f8f9fb;
+    border: none;
+    min-height: 100px;
+    position: relative; }
 
 .plans-list-item-link {
   color: #9ba1a7;
@@ -865,11 +853,9 @@ header {
   font-size: 17px;
   line-height: 40px;
   cursor: pointer; }
+  .plans-list-item-link-buy:hover {
+    background-color: #49cbcd; }
 
-.plans-list-item-link-buy:hover {
-  background-color: #49cbcd; }
-
-/*buttons*/
 footer {
   width: 100%;
   display: block;
@@ -930,51 +916,45 @@ footer {
 
 .facebook {
   background-color: #3b5997; }
-
-.facebook:after {
-  content: "";
-  background: url("../img/social.png");
-  background-position: 0px -39px;
-  width: 11px;
-  height: 22px;
-  position: absolute;
-  top: 10px;
-  left: 15px; }
-
-.facebook:hover {
-  background-color: #4874d0; }
+  .facebook:after {
+    content: "";
+    background: url("../img/social.png");
+    background-position: 0px -39px;
+    width: 11px;
+    height: 22px;
+    position: absolute;
+    top: 10px;
+    left: 15px; }
+  .facebook:hover {
+    background-color: #4874d0; }
 
 .twitter {
   background-color: #3ec2f3; }
-
-.twitter:after {
-  content: "";
-  background: url("../img/social.png");
-  background-position: 0px -22px;
-  width: 21px;
-  height: 17px;
-  position: absolute;
-  top: 12px;
-  left: 10px; }
-
-.twitter:hover {
-  background-color: #78daff; }
+  .twitter:after {
+    content: "";
+    background: url("../img/social.png");
+    background-position: 0px -22px;
+    width: 21px;
+    height: 17px;
+    position: absolute;
+    top: 12px;
+    left: 10px; }
+  .twitter:hover {
+    background-color: #78daff; }
 
 .gplus {
   background-color: #e44c41; }
-
-.gplus:after {
-  content: "";
-  background: url("../img/social.png");
-  background-position: 0px 0px;
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  top: 12px;
-  left: 10px; }
-
-.gplus:hover {
-  background-color: #fb5a4f; }
+  .gplus:after {
+    content: "";
+    background: url("../img/social.png");
+    background-position: 0px 0px;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 12px;
+    left: 10px; }
+  .gplus:hover {
+    background-color: #fb5a4f; }
 
 .form {
   width: 50%;
@@ -990,15 +970,12 @@ footer {
           border-radius: 3px;
   float: left;
   display: block; }
-
-.name_inp::-moz-placeholder {
-  font-size: 16px; }
-
-.name_inp::-webkit-input-placeholder {
-  font-size: 16px; }
-
-.name_inp:-ms-input-placeholder {
-  font-size: 16px; }
+  .name_inp::-moz-placeholder {
+    font-size: 16px; }
+  .name_inp::-webkit-input-placeholder {
+    font-size: 16px; }
+  .name_inp:-ms-input-placeholder {
+    font-size: 16px; }
 
 .email_inp {
   width: 49%;
@@ -1008,15 +985,12 @@ footer {
           border-radius: 3px;
   float: right;
   display: block; }
-
-.email_inp::-moz-placeholder {
-  font-size: 16px; }
-
-.email_inp::-webkit-input-placeholder {
-  font-size: 16px; }
-
-.email_inp:-ms-input-placeholder {
-  font-size: 16px; }
+  .email_inp::-moz-placeholder {
+    font-size: 16px; }
+  .email_inp::-webkit-input-placeholder {
+    font-size: 16px; }
+  .email_inp:-ms-input-placeholder {
+    font-size: 16px; }
 
 #message {
   max-width: 100%;
@@ -1026,17 +1000,13 @@ footer {
   border: none;
   -webkit-border-radius: 3px;
           border-radius: 3px; }
+  #message::-moz-placeholder {
+    font-size: 16px; }
+  #message::-webkit-input-placeholder {
+    font-size: 16px; }
+  #message:-ms-input-placeholder {
+    font-size: 16px; }
 
-#message::-moz-placeholder {
-  font-size: 16px; }
-
-#message::-webkit-input-placeholder {
-  font-size: 16px; }
-
-#message:-ms-input-placeholder {
-  font-size: 16px; }
-
-/*--------------button--------------*/
 .submit_form {
   width: 170px;
   height: 50px;
@@ -1049,25 +1019,23 @@ footer {
   cursor: pointer;
   font-size: 22px;
   border: none; }
+  .submit_form:hover, .submit_form:active {
+    background-color: #55eef0; }
 
-.submit_form:hover {
-  background-color: #55eef0; }
+/*Validation form*/
+.name_block, .email_block {
+  position: relative; }
+  .name_block label#form_name-error, .email_block label#form_name-error {
+    position: absolute;
+    top: 40px;
+    left: 0; }
+  .name_block label#form_email-error, .email_block label#form_email-error {
+    position: absolute;
+    top: 40px; }
 
-#scrollup {
-  position: fixed;
-  opacity: 0.4;
-  padding: 15px 10px 10px;
-  background: #49cbcd;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  left: 10px;
-  bottom: 10px;
-  display: none;
-  cursor: pointer;
-  z-index: 9999; }
-
-#scrollup:hover {
-  opacity: 1; }
+label.error {
+  color: red;
+  font-size: 10px; }
 
 @media only screen and (max-width: 1200px) {
   .nav_list a {
@@ -1228,7 +1196,9 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .slick-slide img {
-    min-height: 566px; } }
+    min-height: 566px; }
+  label#form_email-error {
+    margin-left: 10px; } }
 
 @media only screen and (min-width: 1900px) {
   .sl_link .title_slider {

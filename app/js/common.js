@@ -22,37 +22,39 @@ document.getElementById('plan-button-premium').addEventListener("mouseover", fun
 	});
 });
 
-$(document).ready(function(){
-	
-	jQuery('#scrollup img').click( function(){
-		window.scroll(0 ,0); 
-		return false;
-	});
 
-	jQuery(window).scroll(function(){
-		if ( jQuery(document).scrollTop() > 0 ) {
-			jQuery('#scrollup').fadeIn('fast');
-		} else {
-			jQuery('#scrollup').fadeOut('fast');
-		}
-	});
-
-});
-
-
+/*slider*/
 
 $('.slider').slick({
     dots: false,
     draggable: false
   });
 
+/*navigation*/
+
 $( ".hide_nav" ).click(function() {
 	$('.hide_nav').toggleClass('active');
   $( ".nav_list" ).slideToggle( "slow" ).css('display','block');
 });
 
+/*validation*/
 
+$(function() {
+	$('#js-form').validate({
 
-
+		rules: {
+			form_name: {
+				required:true
+			},
+			form_email: {
+				required: true,
+				email: true
+			},
+			form_message: {
+				required: true
+			}
+		}
+	});
+});
 
 

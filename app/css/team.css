@@ -1,4 +1,3 @@
-/*buttons*/
 #team {
   width: 100%;
   display: block;
@@ -14,44 +13,39 @@
 .team_person {
   width: 25%;
   float: left; }
-
-.ellipse, .ellipse_plus {
-  width: 201px;
-  height: 201px;
-  margin: 0 auto;
-  background-color: #eeeef0;
-  -webkit-border-radius: 100px;
-          border-radius: 100px;
-  position: relative; }
-
-.ellipse_plus:after {
-  content: "";
-  background: url("../img/med.png") no-repeat;
-  width: 42px;
-  height: 41px;
-  position: absolute;
-  top: 80px;
-  left: 80px; }
-
-.title-persons {
-  color: #4e525d;
-  font-size: 22px;
-  font-weight: 400;
-  text-align: center;
-  margin: 50px 0 5px; }
-
-.post {
-  color: #4e525d;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0; }
-
-.persons-par {
-  color: #4e525d;
-  max-width: 250px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 25px;
-  margin: 0 auto;
-  margin-top: 20px; }
+  .team_person .ellipse, .team_person .ellipse_plus {
+    width: 201px;
+    height: 201px;
+    margin: 0 auto;
+    background-color: #eeeef0;
+    -webkit-border-radius: 100px;
+            border-radius: 100px;
+    position: relative; }
+  .team_person .ellipse_plus:after {
+    content: "";
+    background: url("../img/med.png") no-repeat;
+    width: 42px;
+    height: 41px;
+    position: absolute;
+    top: 80px;
+    left: 80px; }
+  .team_person .title-persons {
+    color: #4e525d;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    margin: 50px 0 5px; }
+  .team_person .post {
+    color: #4e525d;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0; }
+  .team_person .persons-par {
+    color: #4e525d;
+    max-width: 250px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0 auto;
+    margin-top: 20px; }
